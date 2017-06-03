@@ -7,16 +7,16 @@
 <title>{{ title }}</title>
 
 <!-- Bootstrap Core CSS -->
-<link href="/public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="/public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 <!-- Theme CSS -->
-<link href="/public/css/grayscale.min.css" rel="stylesheet">
-<link href="/public/css/styles.css" rel="stylesheet">
+<link href="public/css/grayscale.min.css" rel="stylesheet">
+<link href="public/css/styles.css" rel="stylesheet">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -74,6 +74,7 @@
                         <p class="intro-text" style=" font-weight: bold; color:black ">A place where students can interact with STEM professionls.</p>
                         <a href="#contact" class="btn btn-circle page-scroll" style=" font-weight: bold; color:black">
                             <i class="fa fa-angle-double-down animated"></i>
+
                         </a>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
         </div>
     </header>
 
-    <!-- About Section 
+    <!-- About Section
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -154,18 +155,80 @@ MODAL CONTENT
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title" style="color: black">You are a Student:</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                    <!-- STUDENT FORM starts!  Modal -->
+                    <form>
+                        <div class="form-group">
+                            <!-- ACCESS CODE -->
+                            <label>Access Code</label>
+                            <input type="text" class="form-control" placeholder=" Enter STUDENT ACCESS CODE">
+                            <!-- Name -->
+                            <label>First Name</label>
+                            <input type="text" class="form-control" placeholder=" Enter First Name">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Last Name">
+                            <!-- Phone -->
+                            <label>Phone</label>
+                            <input type="text" class="form-control" placeholder="Enter your Phone Number">
+                            <!-- EMAIL -->
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" Enter Email">
+                            <!-- Gender -->
+                            <label>Gender</label>
+                            <input type="text" class="form-control" placeholder="Enter your gender">
 
+
+
+                            <!-- ABOUT ME -->
+                            <label>My Story</label>
+                            <textarea class="form-control" rows="3" placeholder="Tell us about yourself"></textarea>
+
+
+
+
+
+
+
+                            <!-- Area of Interest -->
+                            <label>Area of Interest</label>
+                            <input type="text" class="form-control" placeholder="Enter your Area of Interest">
+
+
+                            <!-- Level of Experience -->
+                            <label>Level of Education</label>
+                            <input type="text" class="form-control" placeholder="Enter your Level of Education">
+
+                            <!-- LinkedIn -->
+                            <label>LinkedIn</label>
+                            <input type="text" class="form-control" placeholder="Enter your LinkedIn URL">
+
+                            <!-- Twitter -->
+                            <label>Level of twitter</label>
+                            <input type="text" class="form-control" placeholder="Enter your Twitter Handle">
+
+                            <!-- facebook -->
+                            <label>Level of facebook</label>
+                            <input type="text" class="form-control" placeholder="Enter your Facebook URL">
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Upload File</label>
+                            <input type="file" id="exampleInputFile">
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <!-- PROFESSIONAL FORM ends!  Modal -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
+<!--    </div> -->
 
 
     <!-- PROFESSIONAL FORM!  Modal -->
@@ -176,7 +239,7 @@ MODAL CONTENT
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title" style="color: black">You are a Professional:</h4>
                 </div>
                 <div class="modal-body">
 
@@ -184,34 +247,28 @@ MODAL CONTENT
                     <!-- PROFESSIONAL FORM starts!  Modal -->
                     <form>
                         <div class="form-group">
+                            <!-- ACCESS CODE -->
+                            <label>Access Code</label>
+                            <input type="text" class="form-control" placeholder=" Enter INVITATION CODE">
+
                             <!-- Name -->
                             <label>First Name</label>
                             <input type="text" class="form-control" placeholder=" Enter First Name">
 
                             <label>Last Name</label>
                             <input type="text" class="form-control" placeholder="Enter Last Name">
+
+                            <!-- Phone -->
+                            <label>Phone</label>
+                            <input type="text" class="form-control" placeholder="Enter your Phone Number">
                             <!-- EMAIL -->
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" Enter Email">
 
                             <!-- Gender -->
-                            <label for="exampleInputEmail1">Gender</label>
+                            <label>Gender</label>
+                            <input type="text" class="form-control" placeholder="Enter your gender">
 
-                            <div class="form-group">
-                                <div class="col-sm-12">
-                                    <div class="checkbox">
-                                        <label>
-              <input type="checkbox"> Male
-            </label>
-                                        <label>
-              <input type="checkbox"> Female
-            </label>
-                                        <label>
-              <input type="checkbox"> Other
-            </label>
-                                    </div>
-                                </div>
-                            </div>
 
                             <!-- ABOUT ME -->
                             <label>My Story</label>
@@ -228,6 +285,17 @@ MODAL CONTENT
                         <label>Level of Experience</label>
                         <input type="text" class="form-control" placeholder="Enter your Level of Experience">
 
+                        <!-- LinkedIn -->
+                        <label>LinkedIn</label>
+                        <input type="text" class="form-control" placeholder="Enter your LinkedIn URL">
+
+                        <!-- Twitter -->
+                        <label>Level of twitter</label>
+                        <input type="text" class="form-control" placeholder="Enter your Twitter Handle">
+
+                        <!-- facebook -->
+                        <label>Level of facebook</label>
+                        <input type="text" class="form-control" placeholder="Enter your Facebook URL">
 
                         <div class="form-group">
                             <label for="exampleInputFile">Upload File</label>
@@ -238,15 +306,12 @@ MODAL CONTENT
                         </div>
                         <button type="submit" class="btn btn-default">Submit</button>
                     </form>
-                    <p>
-                        <a href=""> Nominate a Professional!</a>
-                    </p>
                 </div>
                 <!-- PROFESSIONAL FORM ends!  Modal -->
 
 
 
-                <p>Some text in the modal.</p>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -254,7 +319,7 @@ MODAL CONTENT
         </div>
 
     </div>
-    </div>
+<!--     </div> -->
 
     <!-- OUTREACH FORM!  Modal -->
     <div class="modal fade" id="outreachForm" role="dialog">
