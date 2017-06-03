@@ -1,0 +1,24 @@
+
+
+.centeredBox{
+  margin: auto;
+  text-align: center;
+     text-align: center;
+     margin-top: 15%;
+     width: 75%;
+    padding: 5%;
+     background-color: #ffffff;
+
+}
+
+.homeBtn{
+width:50%;
+margin: 1%;
+
+}
+@media (max-width: 600px) {
+.homeBtn{ 
+    width: 100%;
+    font-size: 15px;
+  }
+}
