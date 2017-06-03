@@ -5,3 +5,13 @@
 .contact {
     width: 200px;
 }
+
+#listedResults {
+    border: white solid 3px;
+    height: 550px;
+}
+
+#mapResults {
+    border: white solid 3px;
+    height: 550px;
+}
