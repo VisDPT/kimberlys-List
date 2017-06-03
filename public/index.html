@@ -7,16 +7,16 @@
 <title>{{ title }}</title>
 
 <!-- Bootstrap Core CSS -->
-<link href="/public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="public/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 <!-- Custom Fonts -->
-<link href="/public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="public/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
 <!-- Theme CSS -->
-<link href="/public/css/grayscale.min.css" rel="stylesheet">
-<link href="/public/css/styles.css" rel="stylesheet">
+<link href="public/css/grayscale.min.css" rel="stylesheet">
+<link href="public/css/styles.css" rel="stylesheet">
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
@@ -48,13 +48,13 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact" style="color:black; font-weight: bold">About</a>
+                        <a class="page-scroll" href="#contact" style="font-weight: bold">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about" style="color:black; font-weight: bold">Scroll1</a>
+                        <a class="page-scroll" href="#about" style="font-weight: bold">Scroll1</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download" style="color:black; font-weight: bold">Scroll2</a>
+                        <a class="page-scroll" href="#download" style="font-weight: bold">Scroll2</a>
                     </li>
 
                 </ul>
@@ -70,10 +70,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading" style="color:black; font-weight: bold">Kimberly's List</h1>
-                        <p class="intro-text" style="color:black; font-weight: bold">A place where students can interact with STEM professionls.</p>
-                        <a href="#contact" class="btn btn-circle page-scroll" style="color:black; font-weight: bold">
+                        <h1 class="brand-heading" style=" font-weight: bold; color:black">Kimberly's List</h1>
+                        <p class="intro-text" style=" font-weight: bold; color:black ">A place where students can interact with STEM professionls.</p>
+                        <a href="#contact" class="btn btn-circle page-scroll" style=" font-weight: bold; color:black">
                             <i class="fa fa-angle-double-down animated"></i>
+
                         </a>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
         </div>
     </header>
 
-    <!-- About Section 
+    <!-- About Section
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
@@ -105,7 +106,7 @@
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#ProfessionalForm"><i class="fa fa-handshake-o"></i> <span class="network-name">OUT REACH</span></a>
+                        <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#outreachForm"><i class="fa fa-handshake-o"></i> <span class="network-name">OUT REACH</span></a>
                     </li>
                     <li>
                         <a class="btn btn-default btn-lg" data-toggle="modal" data-target="#professionalForm"><i class="fa fa-black-tie" aria-hidden="true"></i> <span class="network-name">PROFESSIONALS</span></a>
@@ -114,9 +115,6 @@
                         <a class="btn btn-default btn-info btn-lg" data-toggle="modal" data-target="#studentForm"><i class="fa fa-book" aria-hidden="true" ></i> <span class="network-name">STUDENTS</span></a>
                     </li>
 
-                    <li>
-                        <a type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -157,18 +155,124 @@ MODAL CONTENT
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title" style="color: black">You are a Student:</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
+                    <!-- STUDENT FORM starts!  Modal -->
+                    <form>
+                        <div class="form-group">
+                            <!-- ACCESS CODE -->
+                            <label>Access Code</label>
+                            <input type="text" class="form-control" placeholder=" Enter STUDENT ACCESS CODE">
+                            <!-- Name -->
+                            <label>First Name</label>
+                            <input type="text" class="form-control" placeholder=" Enter First Name">
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Last Name">
+                            <!-- Phone -->
+                            <label>Phone</label>
+                            <input type="text" class="form-control" placeholder="Enter your Phone Number">
+                            <!-- Location -->
+                            <label>Location</label>
+                            <input type="text" class="form-control" placeholder="Enter your city, state">
 
+                            <!-- EMAIL -->
+                            <label for="exampleInputEmail1">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" Enter Email">
+                            <!-- Gender -->
+                            <label>Gender</label>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                Male
+                              </label>
+                            </div>
+                            <div class="checkbox disabled">
+                              <label>
+                                <input type="checkbox" value="" >
+                                Female
+                              </label>
+                            </div>
+
+                            <!-- ABOUT ME -->
+                            <label>My Story</label>
+                            <textarea class="form-control" rows="3" placeholder="Tell us about yourself"></textarea>
+
+    <!-- STEM -->
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                Science
+                              </label>
+                              <label>
+                                <input type="checkbox" value="" >
+                                Technology
+                              </label>
+                              <label>
+                                <input type="checkbox" value="" >
+                                Engineering
+                              </label>
+                              <label>
+                                <input type="checkbox" value="" >
+                                Mathematics
+                              </label>
+                            </div>
+
+
+
+                            <!-- Area of Interest
+                            <label>Area of Interest</label>
+                            <input type="text" class="form-control" placeholder="Enter your Area of Interest">
+-->
+<label>Institution</label>
+<input type="text" class="form-control" placeholder="Enter your School/University">
+
+                            <!-- Level of Experience -->
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox" value="">
+                                K-5
+                              </label>
+
+                              <label>
+                                <input type="checkbox" value="" >
+                                6-8
+                              </label>
+                              <label>
+                                <input type="checkbox" value="" >
+                                9-12
+                              </label>
+                              <label>
+                                <input type="checkbox" value="" >
+                                Undergrad
+                              </label>
+                              <label>
+                                <input type="checkbox" value="" >
+                                Grad
+                              </label>
+                            </div>
+                            <!-- LinkedIn -->
+                            <label>LinkedIn</label>
+                            <input type="text" class="form-control" placeholder="Enter your LinkedIn URL">
+
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Upload Picture</label>
+                            <input type="file" id="exampleInputFile">
+                        </div>
+
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <!-- PROFESSIONAL FORM ends!  Modal -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
+<!--    </div> -->
 
 
     <!-- PROFESSIONAL FORM!  Modal -->
@@ -179,18 +283,135 @@ MODAL CONTENT
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <h4 class="modal-title" style="color: black">You are a Professional:</h4>
                 </div>
                 <div class="modal-body">
-                    <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
 
+
+                    <!-- PROFESSIONAL FORM starts!  Modal -->
+                    <form>
+                        <div class="form-group">
+                            <!-- ACCESS CODE -->
+                            <label>Access Code</label>
+                            <input type="text" class="form-control" placeholder=" Enter INVITATION CODE">
+
+                            <!-- Name -->
+                            <label>First Name</label>
+                            <input type="text" class="form-control" placeholder=" Enter First Name">
+
+                            <label>Last Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Last Name">
+                            <!-- Location -->
+                            <label>Location</label>
+                            <input type="text" class="form-control" placeholder="Enter your city, state">
+
+                            <!-- Phone -->
+                            <label>Phone</label>
+                            <input type="text" class="form-control" placeholder="Enter your Phone Number">
+                            <!-- EMAIL -->
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder=" Enter Email">
+
+                            <!-- Gender -->
+                            <label>Gender</label>
+                            <input type="text" class="form-control" placeholder="Enter your gender">
+
+
+                            <!-- ABOUT ME -->
+                            <label>My Story</label>
+                            <textarea class="form-control" rows="3" placeholder="Tell us about yourself"></textarea>
+
+                        </div>
+
+<!-- STEM-->
+<div class="checkbox">
+  <label>
+    <input type="checkbox" value="">
+    Science
+  </label>
+  <label>
+    <input type="checkbox" value="" >
+    Technology
+  </label>
+  <label>
+    <input type="checkbox" value="" >
+    Engineering
+  </label>
+  <label>
+    <input type="checkbox" value="" >
+    Mathematics
+  </label>
+</div>                        <!-- Occupation -->
+                        <label>Occupation</label>
+                        <input type="text" class="form-control" placeholder="Enter Occupation">
+                        <!-- Organization -->
+                                      <label>Organization</label>
+                                      <input type="text" class="form-control" placeholder="Enter Organization">
+
+                        <!-- Level of Experience -->
+                        <label>Level of Experience</label>
+                    <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Junior
+                          </label>
+                          <label>
+                            <input type="checkbox" value="" >
+                            Mid-level
+                          </label>
+                          <label>
+                            <input type="checkbox" value="" >
+                            Senior
+                          </label>
+
+                        </div>
+
+                        <!-- How would you like to  help? -->
+                        <label>How would you like to  help?</label>
+
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Be a guest speaker
+                          </label>
+                          <label>
+                            <input type="checkbox" value="" >
+                            Share information
+                          </label>
+                          <label>
+                            <input type="checkbox" value="" >
+                            Be a mentor.
+                          </label>
+
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <label>LinkedIn</label>
+                        <input type="text" class="form-control" placeholder="Enter your LinkedIn URL">
+
+                    <div class="form-group">
+                            <label for="exampleInputFile">Upload Picture</label>
+                            <input type="file" id="exampleInputFile">
+                        </div>
+                        <div class="checkbox">
+
+                        </div>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                </div>
+                <!-- PROFESSIONAL FORM ends!  Modal -->
+
+
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
+
     </div>
+<!--     </div> -->
 
     <!-- OUTREACH FORM!  Modal -->
     <div class="modal fade" id="outreachForm" role="dialog">

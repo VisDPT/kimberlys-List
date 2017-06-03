@@ -15,3 +15,7 @@
     border: white solid 3px;
     height: 550px;
 }
+
+.modal-content {
+    color: #000;
+}
