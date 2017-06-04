@@ -12,10 +12,14 @@
 }
 
 #mapResults {
-    border: white solid 3px;
-    height: 550px;
+
+
 }
 
 .modal-content {
     color: #000;
+}
+#map {
+    border: white solid 3px;
+  height: 550px;
 }

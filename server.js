@@ -6,12 +6,12 @@ const request = require('request');
 const jsforce = require('jsforce');
 const assert = require('assert');
 
- let conn = new jsforce.Connection({
-     //loginUrl: 'https://test.salesforce.com'
- });
- conn.login(process.env.SFUSER, process.env.SFPWDTK, function(err) {
-     if (err) { return console.error(err); }
- });
+ // let conn = new jsforce.Connection({
+ //     //loginUrl: 'https://test.salesforce.com'
+ // });
+ // conn.login(process.env.SFUSER, process.env.SFPWDTK, function(err) {
+ //     if (err) { return console.error(err); }
+ // });
 
 server.connection({
 	port: process.env.PORT || 5000,
@@ -154,6 +154,6 @@ function createProfessionalObject(sObj) {
 		engineering: sObj.Engineering__c,
 		math: sObj.Math__c
 	};
-	
+
 	return person;
 }
